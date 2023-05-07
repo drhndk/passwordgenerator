@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 420px;
+    padding: 20px;
+    background-color: palevioletred;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    color: darkslategrey;
+}
+
+.input-content {
+    margin-top: 20px;
+    border: 2px solid darkslategrey;
+    border-radius: 10px;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-content input {
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin-left: 8px;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+}
+.input-content input::placeholder{
+    letter-spacing: 0px;
+}
+
+.fa-copy {
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.4;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-copy:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+ span {
+    position: fixed;
+    margin-left: 300px;
+    margin-bottom: 80px;
+    font-size: 16px;
+    color: black;
+    opacity: none;
+    font-size: 16px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background-color: greenyellow;
+    font-family: cursive;
+    display: none;
+}
+
+@media screen and (width < 405px) {
+    span {
+        margin-left: 270px;
+    }
+    .container {
+        width: 90vw;
+    }
+}
+
+.copy-active {
+    display: flex;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    background-color: darkslategrey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: crimson;
+    transition: 0.5s;
+}
+
+.alert-generate {
+    position: fixed;
+    bottom: 10px;
+    right: -300px;
+    background-color: greenyellow;
+    padding: 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+ .active {
+    right: 100px;
+}
